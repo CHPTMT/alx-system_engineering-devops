@@ -1,2 +1,6 @@
  #!/bin/bash
-sed '$!d' iacta >> iacta
+ed -s iacta <<EOF
+\$t.
+w
+q
+EOF
